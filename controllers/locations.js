@@ -11,7 +11,7 @@ router.get('/new', (req, res) => {
 
 // Show Route
 router.get('/:id', (req, res) => {
-    db.Location.findById(req.params.id, (err, locations) => {
+    db.Locations.findById(req.params.id, (err, locations) => {
         res.render('showlocation', {
             locations: locations,
             tabTitle: "locations.name"
@@ -20,7 +20,7 @@ router.get('/:id', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    db.Location.create(req.body, (err, locations) => {
+    db.Locations.create(req.body, (err, locations) => {
         res.redirect('/')
     })
 })
@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
 //delete route
 router.delete('/:id', (req, res) => {
 
-    db.Location.findByIdAndRemove(req.params.id, (err, locations) => {
+    db.Locations.findByIdAndRemove(req.params.id, (err, locations) => {
         // res.send(location)
         res.redirect('/')
     })
@@ -37,7 +37,7 @@ router.delete('/:id', (req, res) => {
 
 // update route
 router.put('/:id', (req, res) => {
-    db.Location.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, locations) => {
+    db.Locations.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, locations) => {
         // res.send(entry)
         res.redirect('/location/' + locations._id)
     })
@@ -46,7 +46,7 @@ router.put('/:id', (req, res) => {
 
 // Edit route
 router.get('/:id/edit', (req, res) => {
-    db.Location.findById(req.params.id, (err, locations) => {
+    db.Locations.findById(req.params.id, (err, locations) => {
         res.render("editlocation", {
             locations: locations,
             tabTitle: "Edit"
@@ -54,14 +54,5 @@ router.get('/:id/edit', (req, res) => {
     })
 })
 
-
-//buy button
-// router.put('/:id/buy', (req, res) => {
-//     db.Review.findById(req.params.id, (err, reviews) => {
-//         db.Review.findByIdAndUpdate(req.params.id, {qty: products.qty - 1}, {new: true}, (err, products) => {
-//             res.redirect("/product/" + products._id)
-//         })
-//     })
-// })
 
 module.exports = router

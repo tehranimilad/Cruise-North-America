@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+    <div id="mainDiv">
+        <title>Cars</title>
+        <h1>Welcome to Cruise North America!</h1>
+        <a href="/car/new/">Add A Car</a>
+        <a href="/location/new/">Add A Location</a>
+    </div>
+    <div id="mainDiv1">
+        <% for (let car of cars) { %>
+            <figure class= "car-card">
+                <a href="/car/<%= car._id %> ">   
+                <img src=<%=car.img%> width="300" />
+                <figcaption>
+                <%=car.name%>
+                </a>
+                <%=car.description%>
+                $ <%= car.price %></h5>
+                </figcaption>
+                </figure>
+            <% } %>
+    </div>
+    <div id="mainDiv2">
+        <% for (let location of locations) { %>
+            <figure class= "location-card">
+                <a href="/location/<%= location._id %> ">   
+                <img src=<%=location.img%> width="300" />
+                <figcaption>
+                <%=location.road%>
+                </a>
+                <%=location.description%>
+                <%=location.difficulty%>
+                <%=location.visited%>
+                </figcaption>
+                </figure>
+            <% } %>
+    </div>
+    
+
+    
+ 
+    
+</body>
+</html>
+

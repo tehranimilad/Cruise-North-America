@@ -55,13 +55,4 @@ router.get('/:id/edit', (req, res) => {
 })
 
 
-//buy button
-// router.put('/:id/buy', (req, res) => {
-//     db.Review.findById(req.params.id, (err, reviews) => {
-//         db.Review.findByIdAndUpdate(req.params.id, {qty: products.qty - 1}, {new: true}, (err, products) => {
-//             res.redirect("/product/" + products._id)
-//         })
-//     })
-// })
-
 module.exports = router

@@ -7,9 +7,10 @@ const port = 3000
 const methodOverride = require('method-override');
 
 const db = require('./models')
-// const locationsCtrl = require('./controllers/locations')
 
 const carsCtrl = require('./controllers/cars')
+const locationsCtrl = require('./controllers/locations');
+
 
 // +-+-+-+-+-+-+-+-+-+-+
 // |M|I|D|D|L|E|W|A|R|E|
@@ -33,16 +34,28 @@ app.use((req, res, next) => {
 // +-+-+-+-+-+-+
 // Index Route (GET/Read): We'll leave this route in the server.js since it affects both models
 app.get('/', (req, res) => {
-    db.Car.find({}, (err, cars) => {
-        res.render('index', {
-        cars: cars,
-        tabTitle: 'index'
-    }) 
+    db.Locations.find({}, (err, locations) => {
+        db.Car.find({}, (err, cars) => {
+            res.render('index', {
+                locations: locations,
+                cars: cars,
+                tabTitle: 'Cruise America'
+            })
+        })
     })
 })
+// app.get('/', (req, res) => {
+//     db.Car.find({}, (err, cars) => {
+//         res.render('index', {
+//         cars: cars,
+//         tabTitle: 'index'
+//     }) 
+//     })
+// })
+
 
 app.use('/car', carsCtrl)
-// app.use('/location', locationsCtrl)
+app.use('/location', locationsCtrl)
 
 // +-+-+-+-+-+-+-+-+
 // |L|I|S|T|E|N|E|R|
