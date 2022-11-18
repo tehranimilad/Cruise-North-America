@@ -12,5 +12,5 @@ const locationsSchema = new Schema (
     }
 )
 
-const locations = mongoose.model('Location', locationsSchema)
-module.exports = locations
+const Locations = mongoose.model('Location', locationsSchema)
+module.exports = Locations

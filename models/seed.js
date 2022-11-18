@@ -65,18 +65,17 @@ db.Car.deleteMany({}, (err,cars) => {
     }
 })
 
-db.Location.deleteMany({}, (err,locations) => {
-    if(err) {
+db.Locations.deleteMany({}, (err, Locations) => {
+    if (err) {
         console.log('Error occured in remove', err)
     } else {
         console.log('Removed all locations')
-        
-        db.Location.insertMany(newLocations, (err, locations) => {
-            if(err) {
-                console.log('Error occured inserting', err)
+
+        db.Locations.insertMany(newLocations, (err, Locations) => {
+            if (err) {
+                console.log('Error occured in insertMany', err)
             } else {
-                console.log('Created', locations.length, "locations")
-                process.exit()
+                console.log('Created', Locations.length, "locations")
             }
         })
     }
