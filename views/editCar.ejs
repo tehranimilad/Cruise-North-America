@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+    <title>Edit Car Below</title>
+    <a href="/">Back to Cars and Roads</a>
+
+    <div>
+        <form action ="/car/<%= cars._id %>?_method=PUT" method="post" id="createForm">
+            <input type="text" name="name" placeholder="Update car name" required value="<%= cars.name %>" />
+            <input type="text" name="description" placeholder="description of car" value="<%= cars.description %>" />
+            <input type="text" name="img" value="<%= cars.img %>" />
+            <button type="submit">Submit Edit</button>
+        </form>
+    </div>
+</body>
+</html>

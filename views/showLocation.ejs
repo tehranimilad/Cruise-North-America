@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
+    <div id="firstDiv">
+    <a href="/">Back to Cars and Roads</button></a>
+    </div>
+    <div id="mainDiv">
+        <title>Roads</title>
+        <h1>Welcome to Cruise America!</h1>
+    </div>
+    <div>
+            <img src=<%=locations.img%> width="300" />
+            <h3><%=locations.road%></h3>
+            Location: <%= locations.location %>
+            <br />
+            Description: <%= locations.description%>
+            <br />
+            Difficulty: <%= locations.difficulty%>
+            <br />
+            Visited: <%= locations.visited %>
+            <br />
+            <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
+                <br />
+                <button type="submit">Delete Location</button>
+            </form>
+            <br />
+            <a href="/location/<%= locations._id %>/edit"><button>Edit Location</button></a>
+    </div>
     
 </body>
 </html>
+
+

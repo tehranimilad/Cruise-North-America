@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+    <title>Add a vehicle</title>
+    <a href="/">Back to other cars and locations</a>
+
+    <div>
+        <form action ="/car" method="post" id="createForm">
+            <input type="text" name="road" placeholder="road name" required />
+            <input type="text" name="location" placeholder="location (Ex: CA, USA)" />
+            <input type="text" name="description" placeholder="description of road" />
+            <input type="text" name="difficulty" placeholder="difficulty (Easy,Advanced)" />
+            <label for="visited">Visited:</label>
+            <input type="checkbox" name="visited" />
+            <input type="text" name="img" placeholder="link to image of the road"/>
+            <button type="submit">Add Road</button>
+        </form>
+    </div>
+</body>
+</html>

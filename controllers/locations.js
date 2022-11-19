@@ -38,10 +38,8 @@ router.delete('/:id', (req, res) => {
 // update route
 router.put('/:id', (req, res) => {
     db.Locations.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, locations) => {
-        // res.send(entry)
         res.redirect('/location/' + locations._id)
     })
-    // res.send(req.params.id)
 })
 
 // Edit route

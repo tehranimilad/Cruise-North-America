@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+    <div id="firstDiv">
+    <a href="/">Back to Cars and Roads</button></a>
+    </div>
+    <div id="mainDiv">
+        <title>Cars</title>
+        <h1>Welcome to Cruise America!</h1>
+    </div>
+    <div>
+            <img src=<%=cars.img%> width="300" />
+            <br />
+            <h3><%=cars.name%></h3>
+            <br />
+            <%= cars.description %>
+            <br />
+            <%= cars.price %>
+            <br />
+            <a href="/car/<%= cars._id %>/edit"><button>Edit Car</button></a>
+            <br />
+            <form action="/car/<%= cars._id %>?_method=DELETE" method="POST">
+                <br />
+                <button type="submit">Delete Car</button>
+            </form>
+            <br />
+    </div>
+    
+</body>
+</html>
+
+
