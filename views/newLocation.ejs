@@ -7,18 +7,20 @@
 <body>
     <title>Add a vehicle</title>
     <a href="/">Back to other cars and locations</a>
-
     <div>
-        <form action ="/car" method="post" id="createForm">
-            <input type="text" name="road" placeholder="road name" required />
-            <input type="text" name="location" placeholder="location (Ex: CA, USA)" />
-            <input type="text" name="description" placeholder="description of road" />
-            <input type="text" name="difficulty" placeholder="difficulty (Easy,Advanced)" />
-            <label for="visited">Visited:</label>
-            <input type="checkbox" name="visited" />
-            <input type="text" name="img" placeholder="link to image of the road"/>
-            <button type="submit">Add Road</button>
-        </form>
+        <img class="newLocationImage" src="https://a.cdn-hotels.com/gdcs/production70/d1434/a8cfc14e-96a9-46bc-a9a0-e74f424d0abf.jpg" alt="Scenic Route Gif">
     </div>
+        <div>
+            <form action ="/car" method="post" id="createForm">
+                <input type="text" name="road" placeholder="road name" required />
+                <input type="text" name="location" placeholder="location (Ex: CA, USA)" />
+                <input type="text" name="description" placeholder="description of road" />
+                <input type="text" name="difficulty" placeholder="difficulty (Easy,Advanced)" />
+                <label for="visited">Visited:</label>
+                <input type="checkbox" name="visited" />
+                <input type="text" name="img" placeholder="link to image of the road"/>
+                <button type="submit">Add Road</button>
+            </form>
+        </div>
 </body>
 </html>

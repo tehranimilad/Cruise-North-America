@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(255, 253, 253);
+}
+
+#flex-container {
+    display: flex;   
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location-card {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    justify-content: space-evenly;
+    border: 5px solid rgb(0, 0, 0);
+
+}
+
+.car-card {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    justify-content: space-between;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.newLocationImage {
+    max-width: 600px;
+}

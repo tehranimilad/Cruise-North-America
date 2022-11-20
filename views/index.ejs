@@ -5,26 +5,31 @@
     <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
-    <div id="mainDiv">
-        <title>Cars</title>
-        <h1>Welcome to Cruise North America!</h1>
+    <div class="sign">
+        <span class="fast-flicker">Cr</span>ui<span class="flicker">s</span>in'
+      </div>
+    <div id="flex-container">
+
+        <!-- <h1>Welcome to Cruise North America</h1> -->
+        <div>
+            <img src="https://acegif.com/wp-content/uploads/2022/hqgif/superc-1-green-supercar.gif" alt="Super Car Driving Gif">
+        </div>
         <a href="/car/new/">Add A Car</a>
         <a href="/location/new/">Add A Road</a>
-    </div>
-    <div id="mainDiv1">
-        <% for (let car of cars) { %>
-            <figure class= "car-card">
-                <a href="/car/<%= car._id %> ">   
-                <img src=<%=car.img%> width="300" />
-                <figcaption>
-                <%=car.name%>
-                </a>
-                <%=car.description%>
-                $ <%= car.price %></h5>
-                </figcaption>
-                </figure>
-            <% } %>
-    </div>
+        <div id="mainDiv1">
+            <% for (let car of cars) { %>
+                <figure class= "car-card">
+                    <a href="/car/<%= car._id %> ">   
+                    <img src=<%=car.img%> width="300" />
+                    <figcaption>
+                    <%=car.name%>
+                    </a>
+                    <%=car.description%>
+                    $ <%= car.price %></h5>
+                    </figcaption>
+                    </figure>
+                <% } %>
+        </div>
     <div id="mainDiv2">
         <% for (let location of locations) { %>
             <figure class= "location-card">
