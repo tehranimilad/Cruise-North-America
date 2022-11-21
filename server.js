@@ -1,3 +1,4 @@
+
 // +-+-+-+-+-+-+-+-+-+-+-+-+
 // |D|E|P|E|N|D|E|N|C|I|E|S|
 // +-+-+-+-+-+-+-+-+-+-+-+-+
@@ -6,11 +7,11 @@ const app = express()
 const port = 3000
 const methodOverride = require('method-override');
 
+
 const db = require('./models')
 
 const carsCtrl = require('./controllers/cars')
 const locationsCtrl = require('./controllers/locations');
-
 
 // +-+-+-+-+-+-+-+-+-+-+
 // |M|I|D|D|L|E|W|A|R|E|
@@ -55,5 +56,6 @@ app.use('/location', locationsCtrl)
 app.listen(port, () => {
     console.log(`App is running at localhost:${port}`)
 })
+
 
 

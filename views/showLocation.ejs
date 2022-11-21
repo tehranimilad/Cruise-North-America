@@ -25,10 +25,11 @@
             <br />
             <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
                 <br />
-                <button type="submit">Delete Location</button>
+                <a href="/location/<%= locations._id %>/edit"><button>Edit Location</button></a>
             </form>
             <br />
-            <a href="/location/<%= locations._id %>/edit"><button>Edit Location</button></a>
+            <button type="submit">Delete Location</button>
+            
     </div>
     
 </body>
