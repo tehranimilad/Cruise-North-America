@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 const locationsSchema = new Schema (
     {
         road: { type: String, required: true},
-        creator: { type: String,},
+        creator: { type: String},
         location: { type: String},
         description: {type: String},
         difficulty: { type: String},

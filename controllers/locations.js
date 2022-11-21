@@ -12,7 +12,7 @@ router.get('/new', (req, res) => {
 // Show Route
 router.get('/:id', (req, res) => {
     db.Locations.findById(req.params.id, (err, locations) => {
-        res.render('showlocation', {
+        res.render('showLocation', {
             locations: locations,
             tabTitle: "locations.name"
         })
@@ -32,12 +32,12 @@ router.delete('/:id', (req, res) => {
         // res.send(location)
         res.redirect('/')
     })
-    // res.send(req.params.id)
 })
 
 // update route
 router.put('/:id', (req, res) => {
     db.Locations.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, locations) => {
+
         res.redirect('/location/' + locations._id)
     })
 })
@@ -45,7 +45,7 @@ router.put('/:id', (req, res) => {
 // Edit route
 router.get('/:id/edit', (req, res) => {
     db.Locations.findById(req.params.id, (err, locations) => {
-        res.render("editlocation", {
+        res.render("editLocation", {
             locations: locations,
             tabTitle: "Edit"
         })

@@ -29,19 +29,15 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
 
     db.Car.findByIdAndRemove(req.params.id, (err, cars) => {
-        // res.send(location)
         res.redirect('/')
     })
-    // res.send(req.params.id)
 })
 
 // update route
 router.put('/:id', (req, res) => {
     db.Car.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, cars) => {
-        // res.send(entry)
         res.redirect('/car/' + cars._id)
     })
-    // res.send(req.params.id)
 })
 
 // Edit route
