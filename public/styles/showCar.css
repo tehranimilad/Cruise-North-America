@@ -1,0 +1,41 @@
+@media(max-width:599px){
+
+body {
+   background-color:#55565a;
+   color: rgb(255, 255, 255);
+}    
+
+.car-with-text h3 {
+
+}
+
+.car-with-text {
+    margin-top: 8%;
+    text-align: justify;
+    max-width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    /* background-color: white; */
+}
+
+.car-with-text img {
+    display:block;
+    margin: 0 auto;
+
+}
+
+.editButton {
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 1%;
+    border-radius: 10%;
+}
+
+.deleteButton {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(255, 0, 0);
+    padding: 1%;
+    border-radius: 10%;
+}
+}

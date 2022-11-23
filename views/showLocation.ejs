@@ -15,6 +15,8 @@
     <div>
             <img src=<%=locations.img%> width="300" />
             <h3><%=locations.road%></h3>
+            Creator/Author: <%= locations.creator %>
+            <br />
             Location: <%= locations.location %>
             <br />
             Description: <%= locations.description%>
@@ -23,12 +25,12 @@
             <br />
             Visited: <%= locations.visited %>
             <br />
+            <a href="/location/<%= locations._id %>/edit"><button>Edit Road</button></a>
+            <br />
             <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
                 <br />
-                <a href="/location/<%= locations._id %>/edit"><button>Edit Location</button></a>
+                <button type="submit">Delete Location</button>
             </form>
-            <br />
-            <button type="submit">Delete Location</button>
             
     </div>
     

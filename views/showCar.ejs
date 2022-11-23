@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/showCar.css" />
 </head>
 <body>
     <div id="firstDiv">
@@ -10,24 +10,28 @@
     </div>
     <div id="mainDiv">
         <title>Cars</title>
-        <h1>Welcome to Cruise America!</h1>
     </div>
-    <div>
-            <img src=<%=cars.img%> width="300" />
-            <br />
+    <div class="car-with-text">
+        <figure class="showCarFigure">
             <h3><%=cars.name%></h3>
             <br />
-            <%= cars.description %>
+            <img src=<%=cars.img%> width="300" id="showCarImg"/>
             <br />
-            <%= cars.price %>
+            <p><%= cars.description %>
             <br />
-            <a href="/car/<%= cars._id %>/edit"><button>Edit Car</button></a>
             <br />
-            <form action="/car/<%= cars._id %>?_method=DELETE" method="POST">
-                <br />
-                <button type="submit">Delete Car</button>
+            Price Range: $<%= cars.price %>
+            <br />
+            <form action="/car/<%= cars._id %>/edit""><button class="editButton">Edit Car</button>
             </form>
             <br />
+            <form action="/car/<%= cars._id %>?_method=DELETE" method="POST">
+            <br />
+            <button type="submit" class="deleteButton">Delete Car</button>
+            </p>
+            </form>
+            <br />
+        </figure>
     </div>
     
 </body>

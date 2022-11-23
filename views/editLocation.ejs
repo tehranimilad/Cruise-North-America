@@ -11,11 +11,19 @@
     <div>
         <form action ="/location/<%= locations._id %>?_method=PUT" method="post" id="createForm">
             <input type="text" name="road" placeholder="Update road name" required value="<%= locations.road %>" />
+            <br />
+            <input type="text" name="creator" placeholder="Update Creator/Author" required value="<%= locations.creator %>" />
+            <br />
             <input type="text" name="location" placeholder="Update road location" required value="<%= locations.location %>" />
+            <br />
             <input type="text" name="description" placeholder="description of road" value="<%= locations.description %>" />
+            <br />
             <input type="text" name="difficulty" placeholder="difficulty level" value="<%= locations.difficulty %>" />
+            <br />
             <input type="text" name="visited" placeholder="Visited" value="<%= locations.visited%>" />
+            <br />
             <input type="text" name="img" value="<%= locations.img %> " />
+            <br />
             <button type="submit">Submit Edit</button>
         </form>
     </div>
