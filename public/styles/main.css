@@ -1,7 +1,7 @@
 @media(max-width:599px){
-  @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,7 +33,7 @@ header nav a {
   font-size: 2rem;
   color: #ffffff;
   border-radius: 3px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; 
 }
 
 header nav a:hover,
@@ -41,7 +41,7 @@ header nav a.active {
   background: #ffffff;
   color: #343645;
   transition: 0.5s ease-out;
-  letter-spacing: 2px;
+  letter-spacing: 11px;
 }
 body {
   background: #343645;
@@ -95,19 +95,19 @@ section .text-container {
 }
 
 section .text-container .text-box {
-  margin: 20px;
+  margin: 25px;
   padding: 20px;
   background: #fdfdfd;
 }
 
 section .text-container .text-box h3 {
-  font-size: 25px;
+  font-size: 10px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-@media (max-width: 599px) {
+/* @media (max-width: 599px) {
   section h1 {
     font-size: 2rem;
     text-align: center;
@@ -115,7 +115,7 @@ section .text-container .text-box h3 {
   section .text-container {
     flex-direction: column;
   }
-}
+} */
 
 .reveal {
   position: relative;
@@ -137,39 +137,35 @@ section .text-container .text-box h3 {
 }
 
 .location-card {
-  display: flex;
-  margin: 0 auto;
-  padding: 10px;
+  padding: 10px; 
   color:black;
-  max-width: 100%;
+  width: 100%;
   justify-content: space-between;
   border: 5px solid rgb(0, 0, 0);
+  text-align: justify;
+  width: 100%;
 }
 
 .location-card img {
-  padding-right: 10%;
+  display: block;
+  margin: 0 auto;
 }
 
 .car-Card {
-    display: flex;
-    margin: 0 auto;
-    padding: 10px;
-    color:black;
-    max-width: 100%;
-    justify-content: space-between;
-    border: 5px solid rgb(0, 0, 0);
-}
+  padding: 10px; 
+  color:black;
+  width: 100%;
+  justify-content: space-between;
+  border: 5px solid rgb(0, 0, 0);
+  text-align: justify;
+  width: 100%;
+} 
 
 .car-Card img {
- padding-right: 10%;
- max-width: 100%;
+display: block;
+margin: 0 auto;
 }
 
-.car-Card h4 {
-  padding-bottom: 2%;
-  text-align: center;
-  width: 50%;
-}
 .newLocationImage {
     max-width: 600px;
 }
@@ -201,6 +197,16 @@ footer {
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
+.cars-list-text {
+  text-align: justify;
+}
+
+.cars-list-text img {
+  display:block;
+  margin: 0 auto;
+
+}
+
 #carPageTitle {
     color: white;
     text-align: center
@@ -224,7 +230,7 @@ footer {
 
 #addCarButton {
   margin-top: 2%;
-  margin-left: 47%;
+  margin-left: 0%;
   text-align: center;
   align-items: center;
   background-color: rgb(68, 68, 251);
@@ -253,27 +259,27 @@ color:rgb(0, 0, 0);
 }
 
 
-.location-card h4 {
+/* .location-card h4 {
   padding-bottom: 2%;
   text-align: center;
   width: 50%;
-}
-
+} */
+/* 
 .car-Card h5 {
   padding-top: 4%;
   text-align: center;
   width: 50%;
   padding-bottom: 1%;
-}
+} */
 
 
-.location-card h5 {
+/* .location-card h5 {
   padding-top: 4%;
   text-align: center;
   width: 50%;
   padding-bottom: 1%;
 }
-            
+             */
 .carSectionImg{
     display: block;
     margin-left: auto;
@@ -285,8 +291,21 @@ color:rgb(0, 0, 0);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
+    max-width: 100%;
 } 
+
+h5 {
+  font-size: 10px;
+}
+
+.carDescriptions {
+  margin: 0 auto;
+}
+
+.locationDescriptions {
+  margin: 0 auto;
+}
+
 }
 
 
@@ -387,16 +406,6 @@ color:rgb(0, 0, 0);
     margin-bottom: 10px;
   }
   
-  @media (max-width: 900px) {
-    section h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-    section .text-container {
-      flex-direction: column;
-    }
-  }
-  
   .reveal {
     position: relative;
     transform: translateY(150px);
@@ -431,26 +440,26 @@ color:rgb(0, 0, 0);
     padding-right: 10%;
   }
   
-  .car-Card {
-      display: flex;
-      margin: 0 auto;
-      padding: 10px;
-      color:black;
-      width: 100%;
-      justify-content: space-between;
-      border: 5px solid rgb(0, 0, 0);
-  }
+.car-Card {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px; 
+  color:black;
+  width: 100%;
+  justify-content: space-between;
+  border: 5px solid rgb(0, 0, 0);
+} 
   
-  .car-Card img {
+.car-Card img {
    padding-right: 10%;
    max-width: 100%;
-  }
+  } 
   
-  .car-Card h4 {
-    padding-bottom: 3%;
-    text-align: center;
-    width: 90%;
-  }
+.car-Card h4 {
+  padding-bottom: 3%;
+  text-align: center;
+  width: 90%;
+} 
   .newLocationImage {
       max-width: 600px;
   }
@@ -504,18 +513,16 @@ color:rgb(0, 0, 0);
   }
   
 #addCarButton {
-      margin-top: 2%;
-      margin-left: 47%;
-      text-align: center;
-      align-items: center;
-      background-color: rgb(68, 68, 251);
-      padding: 1%;
-      color:rgb(255, 255, 255);
+  margin-top: 2%;
+  margin-left: 47.5%;
+  background-color: rgb(255, 255, 255);
+  padding: 1%;
+  color:rgb(0, 0, 0);
 }
 
 #addCarButton:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 251);
 }
   
 #addLocationButton {   
@@ -523,14 +530,14 @@ color:rgb(0, 0, 0);
   margin-left: 47%;
   text-align: center;
   align-items: center;
-  background-color: rgb(68, 68, 251);
+  background-color: rgb(255, 255, 255);
   padding: 1%;
-  color:rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
 }
 
 #addLocationButton:hover {   
-  background-color: rgb(255, 255, 255);
-  color:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(68, 68, 251);
 }
   
   
@@ -567,6 +574,24 @@ color:rgb(0, 0, 0);
       margin-right: auto;
       max-width: 60%;
   } 
+
+  .carDescriptions {
+    margin: 0 auto;
   }
+
+  .locationDescriptions {
+    margin: 0 auto;
+  }
+
+.car-Card {
+    text-align: justify;
+    width: 100%;
+}
+
+.car-Card img {
+  display: block;
+  margin: 0 auto;
+}
+}
   
   
