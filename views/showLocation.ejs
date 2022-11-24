@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/showLocation.css" />
 </head>
 <body>
     <div id="firstDiv">
-    <a href="/">Back to Cars and Roads</button></a>
+    <a href="/"><button>Back to Cars and Roads</button></a>
     </div>
-    <div id="mainDiv">
+    <div class="mainDiv">
         <title>Roads</title>
-        <h1>Welcome to Cruise America!</h1>
     </div>
-    <div>
-            <img src=<%=locations.img%> width="300" />
+    <div class="location-with-text">
+        <figure class="showLocationFigure">
             <h3><%=locations.road%></h3>
-            Creator/Author: <%= locations.creator %>
+            <br />
+            <img src=<%=locations.img%> width="300" />
+            <br />
+            <p>Creator/Author: <%= locations.creator %>
             <br />
             Location: <%= locations.location %>
             <br />
@@ -25,13 +27,14 @@
             <br />
             Visited: <%= locations.visited %>
             <br />
-            <a href="/location/<%= locations._id %>/edit"><button>Edit Road</button></a>
             <br />
+            <a href="/location/<%= locations._id %>/edit"><button class="editButton">Edit Road</button></a>
             <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
-                <br />
-                <button type="submit">Delete Location</button>
+            <br />
+            <button type="submit" class="deleteButton">Delete Location</button>
+            </p>
             </form>
-            
+        </figure>
     </div>
     
 </body>

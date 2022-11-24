@@ -1,4 +1,4 @@
-@media(max-width:599px){
+@media(max-width:799px){
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
@@ -107,15 +107,15 @@ section .text-container .text-box h3 {
   margin-bottom: 10px;
 }
 
-/* @media (max-width: 599px) {
-  section h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container {
-    flex-direction: column;
-  }
-} */
+.car-Card h4 {
+  padding-bottom: 3%;
+  text-align: center;
+} 
+
+.location-card h4 {
+  padding-bottom: 3%;
+  text-align: center;
+} 
 
 .reveal {
   position: relative;
@@ -149,6 +149,7 @@ section .text-container .text-box h3 {
 .location-card img {
   display: block;
   margin: 0 auto;
+  padding-bottom: 3%;
 }
 
 .car-Card {
@@ -191,7 +192,7 @@ footer {
 }
 
 .footIcons {
-    width: 5%;
+    width: 10%;
     border-radius: 15%;
     border: 4px solid rgb(0, 0, 0);
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
@@ -228,6 +229,7 @@ footer {
   color :white;
 }
 
+
 #addCarButton {
   margin-top: 2%;
   margin-left: 0%;
@@ -238,10 +240,12 @@ footer {
   color:rgb(255, 255, 255);
 }
 
+
+
 #addCarButton:hover {
 color: black;
 background-color: rgb(255, 255, 255);
-}
+} 
 
 #addLocationButton {   
 margin-top: 2%;
@@ -258,28 +262,6 @@ background-color: rgb(255, 255, 255);
 color:rgb(0, 0, 0);
 }
 
-
-/* .location-card h4 {
-  padding-bottom: 2%;
-  text-align: center;
-  width: 50%;
-} */
-/* 
-.car-Card h5 {
-  padding-top: 4%;
-  text-align: center;
-  width: 50%;
-  padding-bottom: 1%;
-} */
-
-
-/* .location-card h5 {
-  padding-top: 4%;
-  text-align: center;
-  width: 50%;
-  padding-bottom: 1%;
-}
-             */
 .carSectionImg{
     display: block;
     margin-left: auto;
@@ -312,7 +294,7 @@ h5 {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-@media(min-width:600px){
+@media(min-width:800px){
   @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 * {
   margin: 0;
@@ -514,7 +496,7 @@ h5 {
   
 #addCarButton {
   margin-top: 2%;
-  margin-left: 47.5%;
+  margin-left: 46%;
   background-color: rgb(255, 255, 255);
   padding: 1%;
   color:rgb(0, 0, 0);
@@ -527,7 +509,7 @@ h5 {
   
 #addLocationButton {   
   margin-top: 2%;
-  margin-left: 47%;
+  margin-left: 46%;
   text-align: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
@@ -572,7 +554,7 @@ h5 {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      max-width: 60%;
+      max-width: 55%;
   } 
 
   .carDescriptions {

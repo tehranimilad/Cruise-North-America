@@ -1,0 +1,53 @@
+@media(max-width:599px){
+
+body {
+    background-color:#55565a;
+    color: rgb(255, 255, 255);
+}    
+
+.location-with-text h3 {
+    text-align: center;
+}
+
+.location-with-text {
+    margin-top: 8%;
+    text-align: justify;
+    max-width: 100%;
+    border: 5px solid rgb(255, 255, 255);
+
+}
+
+.location-with-text img {
+    display:block;
+    margin: 0 auto;
+
+}
+
+.editButton {
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 1%;
+    border-radius: 10%;
+    color:white;
+}
+
+.editButton:hover {
+    background-color: rgb(253, 253, 253);
+    color:rgb(0, 0, 0);
+}
+
+.deleteButton {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(255, 0, 0);
+    padding: 1%;
+    border-radius: 10%;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+}
