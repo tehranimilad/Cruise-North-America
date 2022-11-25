@@ -48,6 +48,8 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 75%;
+    padding-bottom: 2%;
+
 }
 
 #createForm {
@@ -70,6 +72,7 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 90%;
+    padding-bottom: 2%;
 }
 
 #createForm {
@@ -83,6 +86,7 @@ body {
 }
 
 /* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
+
 
 .addCarBlock{
 	position: relative;

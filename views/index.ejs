@@ -26,6 +26,7 @@
           </div>
             <div class="text-container">
               <div class="text-box">
+                <div class="mainCarBlock">
                 <% for (let car of cars) { %>
                   <figure class= "car-Card">
                       <a href="/car/<%= car._id %> ">   
@@ -39,6 +40,7 @@
                       Price Range: $<%= car.price %></h5>
                     </figure>
                 <% } %>
+              </div>
             </div>
           </div>
         </div>
@@ -61,6 +63,7 @@
           <a href="/location/<%= locations._id %>/new"><button class="addLocationButton">Add A Road</button></a>
           <div class="text-container">
             <div class="text-box">
+              <div class="mainCarBlock">
                 <% for (let location of locations) { %>
                     <figure class= "location-card">
                         <a href="/location/<%= location._id %> ">  
@@ -77,6 +80,7 @@
                         </figcaption>
                         </figure>
                     <% } %>
+              </div>
             </div>
           </div>
         </div>
