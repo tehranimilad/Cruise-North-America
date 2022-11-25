@@ -41,7 +41,7 @@ header nav a.active {
   background: #ffffff;
   color: #343645;
   transition: 0.5s ease-out;
-  letter-spacing: 11px;
+  letter-spacing: 7px;
 }
 body {
   background: #343645;
@@ -108,13 +108,17 @@ section .text-container .text-box h3 {
 }
 
 .car-Card h4 {
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   text-align: center;
+  text-decoration: none;
+  color:black;
 } 
 
 .location-card h4 {
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   text-align: center;
+  text-decoration: none;
+  color:black;
 } 
 
 .reveal {
@@ -191,13 +195,133 @@ button {
   margin: 0 auto;
 }
 
+/* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
+.addLocationButton {
+  width: 100px;
+  height: 39px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.addLocationButton:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.addLocationButton:active {
+  color: rgb(255, 255, 255)
+}
+
+.addLocationButton:active:after {
+  background: transparent;
+}
+
+.addLocationButton:hover:before {
+  opacity: 1;
+}
+
+.addLocationButton:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+}
+
+.btn {
+width: 150px;
+height: 50px;
+border: 1px solid #333;
+font-family: 'Cinzel', serif;
+font-size: 20px;
+cursor: pointer;
+-webkit-tap-highlight-color: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: 0;
+transition: 1s;
+}
+
+.btn::before, .btn::after {
+position: absolute;
+background: #eee;
+z-index: -1;
+transition: 1s;
+content: '';
+}
+
+.btn::before {
+height: 50px;
+width: 130px;
+}
+
+.btn::after {
+width: 150px;
+height: 30px;
+}
+
+.noselect {
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn:hover::before {
+width: 0px;
+background: #fff;
+}
+
+.btn:hover::after {
+height: 0px;
+background: #fff;
+}
+
+.btn:hover {
+background: #fff;
+}
+
 footer {
-    padding: 3% 0% 2% 0%;
-    text-align: center;
+  display: block;
+  text-align: center;
+  padding-bottom: 6%;
 }
 
 .footIcons {
-    width: 10%;
+    width: 15%;
     border-radius: 15%;
     border: 4px solid rgb(0, 0, 0);
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
@@ -236,12 +360,13 @@ footer {
   max-width: 40%;
 }
 
-.roadSectionImg{
-  display: block;
+/* #exploreMore img{
+  width: 100%;
+  display: block; 
   margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-} 
+  margin-right: auto; 
+  max-width: 100%; 
+}  */
 
 h5 {
   font-size: 10px;
@@ -255,6 +380,7 @@ h5 {
   margin: 0 auto;
 }
 
+/* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
 
 .mainCarBlock {
 	position: relative;
@@ -267,8 +393,8 @@ h5 {
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
+	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
+		#ff9c9c, #ffdada,#ffffff, #ffffff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -291,7 +417,7 @@ h5 {
 .mainCarBlock:after {
 	filter: blur(50px);
 }
-}
+
 
 
 
@@ -401,7 +527,7 @@ section .text-container .text-box {
 }
 
 section .text-container .text-box h3 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -452,6 +578,9 @@ section .text-container .text-box h3 {
   padding-bottom: 3%;
   text-align: center;
   width: 90%;
+  text-decoration: none;
+  color:black;
+}
 } 
 
 .newLocationImage {
@@ -474,8 +603,9 @@ a.button {
 } 
   
 footer {
-    padding: 3% 0% 2% 0%;
-    text-align: center;
+  display: block;
+  text-align: center;
+  padding-bottom: 6%;
 }
   
 .footIcons {
@@ -513,6 +643,67 @@ footer {
 button {
   display: block;
   margin: 0 auto;
+}
+/* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
+.addLocationButton {
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.addLocationButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.addLocationButton:active {
+    color: rgb(255, 255, 255)
+}
+
+.addLocationButton:active:after {
+    background: transparent;
+}
+
+.addLocationButton:hover:before {
+    opacity: 1;
+}
+
+.addLocationButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
 }
 
 .btn {
@@ -576,6 +767,8 @@ button {
     padding-bottom: 4%;
     text-align: center;
     width: 90%;
+    text-decoration: none;
+    color:black;
 }
 
 .car-Card h5 {
@@ -583,6 +776,7 @@ button {
   text-align: center;
   width: 50%;
   padding-bottom: 1%;
+  font-size: 14px;
 }
 
 .location-card h5 {
@@ -590,6 +784,7 @@ button {
     text-align: center;
     width: 50%;
     padding-bottom: 1%;
+    font-size: 14px;
 }
   
 .carSectionImg{
@@ -624,6 +819,7 @@ button {
   margin: 0 auto;
 }
 
+/* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
 
 .mainCarBlock {
 	position: relative;
@@ -636,8 +832,8 @@ button {
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
+	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #ff0000, 
+		#ff9c9c, #ffdada,#ffffff, #ffffff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -660,6 +856,5 @@ button {
 .mainCarBlock:after {
 	filter: blur(50px);
 }
-}
-  
+
   

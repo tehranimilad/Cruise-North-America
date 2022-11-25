@@ -1,53 +1,371 @@
-@media(max-width:599px){
+@media(max-width:699px){
 
 body {
-    background-color:#55565a;
-    color: rgb(255, 255, 255);
-}    
+    background: #343645;
+    color:white;
+}
 
-.location-with-text h3 {
+/* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
+.addCarBlock{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5%;
+    background: linear-gradient(0deg, #343645, #343645);
+    text-align: center;
+
+}
+
+.addCarBlock:before, .addCarBlock:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
+		#ff9c9c, #ffdada,#ffffff, #ffffff);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 22s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+    
+.addCarBlock:after {
+    filter: blur(50px);
+}
+
+
+.newCarImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    padding-bottom: 2%;
+
+}
+
+#createForm {
     text-align: center;
 }
 
-.location-with-text {
-    margin-top: 8%;
-    text-align: justify;
-    max-width: 100%;
+.newCarDiv{
     border: 5px solid rgb(255, 255, 255);
 
 }
 
-.location-with-text img {
-    display:block;
-    margin: 0 auto;
+/* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 
+.addLocationButton {
+    width: 75px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
-.editButton {
-    display: block;
-    margin: 0 auto;
-    background-color: blue;
-    padding: 1%;
-    border-radius: 10%;
+.addLocationButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.addLocationButton:active {
+    color: rgb(255, 255, 255)
+}
+
+.addLocationButton:active:after {
+    background: transparent;
+}
+
+.addLocationButton:hover:before {
+    opacity: 1;
+}
+
+.addLocationButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #333;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  background: #eee;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.btn::before {
+  height: 50px;
+  width: 130px;
+}
+
+.btn::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+/* ------------------------------------------------------------ */
+@media(min-width:700px){
+
+body {
+    background: #343645;
     color:white;
 }
 
-.editButton:hover {
-    background-color: rgb(253, 253, 253);
-    color:rgb(0, 0, 0);
-}
-
-.deleteButton {
+.newCarImg {
     display: block;
     margin: 0 auto;
-    background-color: rgb(255, 0, 0);
-    padding: 1%;
-    border-radius: 10%;
-    color: white;
+    max-width: 100%;
+    padding-bottom: 2%;
 }
 
-.deleteButton:hover {
-    background-color: rgb(255, 255, 255);
+.newCarDiv {
+    border: 5px solid rgb(255, 255, 255);
+
+}
+
+/* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
+
+
+.addCarBlock{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0%;
+    width: 500px;
+    padding: 1%;
+    text-align: center;
+    background: linear-gradient(0deg, #343645, #343645);
+}
+
+.addCarBlock:before, .addCarBlock:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
+		#ff9c9c, #ffdada,#ffffff, #ffffff);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.addCarBlock:after {
+    filter: blur(50px);
+}
+
+/* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
+
+.addLocationButton {
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
     color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.addLocationButton:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.addLocationButton:active {
+    color: rgb(255, 255, 255)
+}
+
+.addLocationButton:active:after {
+    background: transparent;
+}
+
+.addLocationButton:hover:before {
+    opacity: 1;
+}
+
+.addLocationButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 }
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #333;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+}
+
+.btn::before, .btn::after {
+  position: absolute;
+  background: #eee;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+}
+
+.btn::before {
+  height: 50px;
+  width: 130px;
+}
+
+.btn::after {
+  width: 150px;
+  height: 30px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+}
+    
+
+

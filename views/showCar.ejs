@@ -6,11 +6,10 @@
 </head>
 <body>
     <div id="firstDiv">
-    <a href="/"><button>Back to Cars and Roads</button></a>
+    <a href="/"><button class="addLocationButton">Back</button></a>
     </div>
-    <div class="mainDiv">
+    <div class="addCarBlock">
         <title>Cars</title>
-    </div>
     <div class="car-with-text">
         <figure class="showCarFigure">
             <h3><%=cars.name%></h3>
@@ -22,15 +21,16 @@
             <br />
             Price Range: $<%= cars.price %>
             <br />
-            <form action="/car/<%= cars._id %>/edit""><button class="editButton">Edit Car</button>
+            <form action="/car/<%= cars._id %>/edit""><button class="addLocationButton">Edit Car</button>
             </form>
             <br />
             <form action="/car/<%= cars._id %>?_method=DELETE" method="POST">
             <br />
-            <button type="submit" class="deleteButton">Delete Car</button>
+            <button type="submit" class="addLocationButton">Delete Car</button>
             </p>
             </form>
         </figure>
+        </div>
     </div>
     
 </body>

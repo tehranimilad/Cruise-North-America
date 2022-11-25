@@ -6,35 +6,36 @@
 </head>
 <body>
     <div id="firstDiv">
-    <a href="/"><button>Back to Cars and Roads</button></a>
+    <a href="/"><button class="addLocationButton">Back</button></a>
     </div>
-    <div class="mainDiv">
+    <div class="addCarBlock">
         <title>Roads</title>
-    </div>
-    <div class="location-with-text">
-        <figure class="showLocationFigure">
-            <h3><%=locations.road%></h3>
-            <br />
-            <img src=<%=locations.img%> width="300" />
-            <br />
-            <p>Creator/Author: <%= locations.creator %>
-            <br />
-            Location: <%= locations.location %>
-            <br />
-            Description: <%= locations.description%>
-            <br />
-            Difficulty: <%= locations.difficulty%>
-            <br />
-            Visited: <%= locations.visited %>
-            <br />
-            <br />
-            <a href="/location/<%= locations._id %>/edit"><button class="editButton">Edit Road</button></a>
-            <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
-            <br />
-            <button type="submit" class="deleteButton">Delete Location</button>
-            </p>
-            </form>
-        </figure>
+        <div class="location-with-text">
+            <figure class="showLocationFigure">
+                <h3><%=locations.road%></h3>
+                <br />
+                <img class="newCarImg" src=<%=locations.img%> width="300" />
+                <br />
+                <p>Creator/Author: <%= locations.creator %>
+                <br />
+                Location: <%= locations.location %>
+                <br />
+                <br />
+                Description: <%= locations.description%>
+                <br />
+                Difficulty: <%= locations.difficulty%>
+                <br />
+                Visited: <%= locations.visited %>
+                <br />
+                <br />
+                <a href="/location/<%= locations._id %>/edit"><button class="addLocationButton">Edit Road</button></a>
+                <form action="/location/<%= locations._id %>?_method=DELETE" method="POST">
+                <br />
+                <button type="submit" class="addLocationButton">Delete Location</button>
+                </p>
+                </form>
+            </figure>
+            </div>
     </div>
     
 </body>
