@@ -20,25 +20,25 @@
       </section>
       <section id="cars">
         <div class="container reveal">
-          <h2>Cars</h2>
-        <div>
-          <a href="/car/<%= cars._id %>/new"><button>Add Car</a></button>
-          </div>
-          <div class="text-container">
-            <div class="text-box">
-              <% for (let car of cars) { %>
-                <figure class= "car-Card">
-                    <a href="/car/<%= car._id %> ">   
-                    <h4><%=car.name%></h4>
-                    <img src=<%=car.img%> width="300" />
-                    </a>
-                    <br />
-                    <h5 class="carDescriptions"><%=car.description%>
-                    <br />
-                    <br />
-                    Price Range: $<%= car.price %></h5>
-                  </figure>
-              <% } %>
+          <h2 class="pageTitles">Cars</h2>
+          <div>
+            <a href="/car/<%= cars._id %>/new"><button class="addLocationButton">Add Car</a></button>
+            </div>
+            <div class="text-container">
+              <div class="text-box">
+                <% for (let car of cars) { %>
+                  <figure class= "car-Card">
+                      <a href="/car/<%= car._id %> ">   
+                      <h4><%=car.name%></h4>
+                      <img src=<%=car.img%> width="300" />
+                      </a>
+                      <br />
+                      <h5 class="carDescriptions"><%=car.description%>
+                      <br />
+                      <br />
+                      Price Range: $<%= car.price %></h5>
+                    </figure>
+                <% } %>
             </div>
           </div>
         </div>
@@ -57,8 +57,8 @@
     
       <section id="roads">
         <div class="container reveal">
-          <h2 id="roadsTitle">Roads and Locations</h2>
-          <a href="/location/<%= locations._id %>/new"><button id="addLocationButton">Add A Road</button></a>
+          <h2 class="pageTitles">Roads</h2>
+          <a href="/location/<%= locations._id %>/new"><button class="addLocationButton">Add A Road</button></a>
           <div class="text-container">
             <div class="text-box">
                 <% for (let location of locations) { %>

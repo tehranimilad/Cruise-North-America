@@ -1,0 +1,46 @@
+@media(max-width:699px){
+
+body {
+    background: #343645;
+}
+
+.newCarImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+#createForm {
+    text-align: center;
+}
+
+.newCarDiv{
+    border: 5px solid rgb(255, 255, 255);
+
+}
+}
+
+@media(min-width:700px){
+
+body {
+    background: #343645;
+}
+
+.newCarImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#createForm {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.newCarDiv {
+    border: 5px solid rgb(255, 255, 255);
+
+}
+}
+
+

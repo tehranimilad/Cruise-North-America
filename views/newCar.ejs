@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/newAndEditCars.css"" />
 </head>
 <body>
     <title>Add a vehicle</title>
-    <a href="/" class="button">Back to other cars</a>
-    <div>
-        <img src="https://i.pinimg.com/originals/d8/f3/14/d8f3142f3557e52527a45f4cbd2039f1.gif" alt="car drifting gif">
-    </div>
+    <a href="/" class="button"><button>Back to other cars</button></a>
+    <div class="newCarDiv">
+        <img src="https://i.pinimg.com/originals/d8/f3/14/d8f3142f3557e52527a45f4cbd2039f1.gif" alt="car drifting gif" class="newCarImg">
         <div>
             <form action ="/car" method="post" id="createForm">
                 <input type="text" name="name" placeholder="car name" required />
@@ -23,5 +22,6 @@
                 <button type="submit">Add Car</button>
             </form>
         </div>
+    </div>
 </body>
 </html>
