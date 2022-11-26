@@ -2,20 +2,27 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/newAndEditCars.css" />
 </head>
 <body>
     <title>Edit Car Below</title>
-    <a href="/">Back to Cars and Roads</a>
-
-    <div>
-        <form action ="/car/<%= cars._id %>?_method=PUT" method="post" id="createForm">
-            <input type="text" name="name" placeholder="Update car name" required value="<%= cars.name %>" />
-            <input type="text" name="description" placeholder="description of car" value="<%= cars.description %>" />
-            <input type="text" name="img" value="<%= cars.img %>" />
-            <input type="number" name="price" placeholder="price of car" value="<%= cars.price %>" />
-            <button type="submit">Submit Edit</button>
-        </form>
+    <a href="/"><button class="addLocationButton">Back</button></a>
+    <div class="addCarBlock">
+        <h1>Edit Car Below</h1>
+        <img src="https://i.pinimg.com/originals/05/b1/19/05b119651aa0a10163579fa7867b7b93.gif" alt="Orange Lambo" class="newCarImg">
+        <div>
+            <form action ="/car/<%= cars._id %>?_method=PUT" method="post" id="createForm">
+                <input type="text" name="name" placeholder="Update car name" required value="<%= cars.name %>" />
+                <br/>
+                <input type="text" name="description" placeholder="description of car" value="<%= cars.description %>" />
+                <br/>
+                <input type="text" name="img" value="<%= cars.img %>" />
+                <br/>
+                <input type="number" name="price" placeholder="price of car" value="<%= cars.price %>" />
+                <br/>
+                <button type="submit" class="addLocationButton">Submit Edit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

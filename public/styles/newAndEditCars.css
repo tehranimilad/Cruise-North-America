@@ -1,7 +1,7 @@
 @media(max-width:699px){
 
 body {
-    background: #343645;
+    background: #000000;
 }
 
 /* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     padding: 5%;
-    background: linear-gradient(0deg, #343645, #343645);
+    background: linear-gradient(0deg, #040404, #000000);
     text-align: center;
     color:white;
 }
@@ -147,7 +147,7 @@ footer {
 .btn {
   width: 150px;
   height: 50px;
-  border: 1px solid #333;
+  border: 1px solid rgb(0, 0, 0);
   font-family: 'Cinzel', serif;
   font-size: 20px;
   cursor: pointer;
@@ -205,7 +205,7 @@ footer {
 @media(min-width:700px){
 
 body {
-    background: #343645;
+    background: #000000;
 }
 
 .newCarImg {
@@ -230,10 +230,10 @@ body {
 .addCarBlock{
     position: relative;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 1%;
     width: 500px;
-    padding: 5%;
-    background: linear-gradient(0deg, #343645, #343645);
+    padding: 3%;
+    background: linear-gradient(0deg, #000000, #000000);
     text-align: center;
     color:white;
 }
@@ -290,10 +290,11 @@ footer {
 /* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 
 .addLocationButton {
-    width: 90px;
+    width: 100px;
     height: 35px;
     border: none;
     outline: none;
+    margin-top:1%;
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
     cursor: pointer;
@@ -353,7 +354,7 @@ footer {
 .btn {
   width: 150px;
   height: 50px;
-  border: 1px solid #333;
+  border: 1px solid rgb(0, 0, 0);
   font-family: 'Cinzel', serif;
   font-size: 20px;
   cursor: pointer;

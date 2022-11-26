@@ -1,7 +1,7 @@
 @media(max-width:699px){
 
 body {
-    background: #343645;
+    background: #000000;
     color:white;
 }
 
@@ -10,8 +10,8 @@ body {
     position: relative;
     margin: 0 auto;
     margin-top: 5%;
-    padding: 10%;
-    background: linear-gradient(0deg, #343645, #343645);
+    padding: 5%;
+    background: linear-gradient(0deg, #000000, #000000);
     text-align: center;
 }
 
@@ -20,8 +20,8 @@ body {
     position: absolute;
     left: -2px;
     top: -2px;
-	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#4665e2, #4000ff, #0021fb, 
+		#9cb3ff, #daf1ff,#ffffff, #ffffff);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -82,7 +82,7 @@ footer {
 /* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 
 .addLocationButton {
-    width: 75px;
+    width: 85px;
     height: 30px;
     border: none;
     outline: none;
@@ -90,13 +90,14 @@ footer {
     background: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
+    margin-top: 1%;
     z-index: 0;
     border-radius: 10px;
 }
 
 .addLocationButton:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    background: linear-gradient(45deg, #1e00ff, #2c25ff, #425fff, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -145,7 +146,7 @@ footer {
 .btn {
   width: 150px;
   height: 50px;
-  border: 1px solid #333;
+  border: 1px solid rgb(0, 0, 0);
   font-family: 'Cinzel', serif;
   font-size: 20px;
   cursor: pointer;
@@ -203,7 +204,7 @@ footer {
 @media(min-width:700px){
 
 body {
-    background: #343645;
+    background: #000000;
     color: white;
 }
 
@@ -229,10 +230,10 @@ body {
 .addCarBlock{
     position: relative;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 1%;
     width: 500px;
     padding: 3%;
-    background: linear-gradient(0deg, #343645, #343645);
+    background: linear-gradient(0deg, #000000, #000000);
     text-align: center;
 }
 
@@ -348,7 +349,7 @@ footer {
 .btn {
   width: 150px;
   height: 50px;
-  border: 1px solid #333;
+  border: 1px solid rgb(0, 0, 0);
   font-family: 'Cinzel', serif;
   font-size: 20px;
   cursor: pointer;

@@ -2,30 +2,49 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/newAndEditLocations.css" />
 </head>
 <body>
     <title>Edit Your Road Below</title>
-    <a href="/">Back to Cars and Roads</a>
-
-    <div>
-        <form action ="/location/<%= locations._id %>?_method=PUT" method="post" id="createForm">
-            <input type="text" name="road" placeholder="Update road name" required value="<%= locations.road %>" />
-            <br />
-            <input type="text" name="creator" placeholder="Update Creator/Author" required value="<%= locations.creator %>" />
-            <br />
-            <input type="text" name="location" placeholder="Update road location" required value="<%= locations.location %>" />
-            <br />
-            <input type="text" name="description" placeholder="description of road" value="<%= locations.description %>" />
-            <br />
-            <input type="text" name="difficulty" placeholder="difficulty level" value="<%= locations.difficulty %>" />
-            <br />
-            <input type="text" name="visited" placeholder="Visited" value="<%= locations.visited%>" />
-            <br />
-            <input type="text" name="img" value="<%= locations.img %> " />
-            <br />
-            <button type="submit">Submit Edit</button>
-        </form>
+    <a href="/"><button class="addLocationButton">Back</button></a>
+    <div class="addCarBlock">
+        <h1>Edit Location</h1>
+        <img src="https://images.milledcdn.com/2021-05-13/NhQ1ZWiso65-fvf0/1SEQcpQU1yTv.gif" alt="Scenic Route gif" class="newCarImg">
+            <div>
+                <form action ="/location/<%= locations._id %>?_method=PUT" method="post" id="createForm">
+                    <input type="text" name="road" placeholder="Update road name" required value="<%= locations.road %>" />
+                    <br />
+                    <input type="text" name="creator" placeholder="Update Creator/Author" required value="<%= locations.creator %>" />
+                    <br />
+                    <input type="text" name="location" placeholder="Update road location" required value="<%= locations.location %>" />
+                    <br />
+                    <input type="text" name="description" placeholder="description of road" value="<%= locations.description %>" />
+                    <br />
+                    <input type="text" name="difficulty" placeholder="difficulty level" value="<%= locations.difficulty %>" />
+                    <br />
+                    <input type="text" name="visited" placeholder="Visited" value="<%= locations.visited%>" />
+                    <br />
+                    <input type="text" name="img" value="<%= locations.img %> " />
+                    <br />
+                    <button type="submit" class="addLocationButton">Submit Edit</button>
+                </form>
+            </div>
     </div>
+    <footer id="footLinks">
+        <a href="https://www.linkedin.com/in/miladtehrani/" target="_blank">
+            <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAACrq6uEhITf39+4uLj7+/tGRkbs7OyNjY2YmJhycnI+Pj5hYWH39/dPT08kJCTo6OgSEhI0NDQbGxvMzMwqKiry8vLT09MLCwuioqK+vr7c3NweHh4uLi56enpYWFhqampKSko4ODiJiYm7u7uenp6xsbF2dnZdXV2I6DiNAAAGaUlEQVR4nO3d6ZaqOhAGUCJOIOCACCoi9mT7/i940T4qKiQVhJtUVn0/z5JD7WULCRmwGCfrxWK3W61WWRiGnueNpkVy/5LJLfZfHPchPz3JbB6Pd+177ue6nPpUVDEqyvGKqrLVarZbLhYchFX1j/kmSdL+eBzHgYUgQRyP5/00cnKYMN/GqktunPHAEwr3fdVVvpno+Yt8FOZz1QW2kCisFS4HqotrJ8N9jTAbqy6ttRwrhaeh6rpaTFQhnKguqt0kL0JfdUltJ3kSfqguqP1ED8Id3pt8fXplYaS6mk6yvwsd1bV0kyC7CVWX0lWiq/CoupLOkv8JV6rr6C7Rn9BVXUeH8S5CE/oTdRmchca1ZsqJ14XwW3UVncZn1trE5sw9G2YdVNfQbRJm9VTX0G3mxgvjtenCYGG6cLgzXWjNjBeuSIg+IQnRxyMh+oyMF05JiD6NhPPo+zgYbKM+hs7zSV4Y+fdB43yj/aiqLyscfLLHOJp/kZLC8S97SbbtqrhWIieMsleg7gM7BxlhVOkrYndX4NuZSAhrgVp/ixLC/rJeqPHwlYTQ5wDZTtvBDxss7PGAjGn7YBksjNd8IUu6LbRxwEJHANR2xhFUGKxEwrWm7TeokHOnuEbTyylUKLjOnKPpbd8BCn/EwqmecxtdoNAVCzM9Z71DhcJLqbZz41oULvVs1rQp1PN2ARUCrjTIf4cbsfAD97X0KBbuOy61YaDCRCzUtE0DFQbVT2jK0fNCY21a61vo2kHsQYVzkVDXqeJgoeh+oe0MR7gweF3ZV8o67bTMNwIXWglvKepPl0W+FQnheb5tXXS9zFhywvpusLY/QktSaG2rHwrberbX/iIntNLTq2+n98pTSWHxY3xu3NiatmWukRZawXF654WOnt3eUuSFRdKjs59M9vYm0rNL+JBGQlQhIf6QEH9IiD8kxB8S/s+Jk+3Gte39Obbj9rZJ+m7DXidhMPB3r52zpff71mM8CeGYm6o2eMw94unDqV3/kCR7YxorXNivL+Ccqm4wp+ai4/XoO/D/e7Zv2k1TJ/RKHxzveZ/8y8Jt1lXTQnjkPae8Z9Zo1bkGwnHFs5+aNHnkpV4YzcBAxqbyVxzlQsDgcjkz6QmCqoVfcsDigiM7QKJYyP1EdZaSGzuqFTYAFn+ocndGpULJ3+A1UzTCbTOg5JZB6oSjGHafr4rMBVXhdzhpDGQjiTu/OuFbkZi7g1QYwlvhSIUM3m/HKvTAXyJWYeX5zBKCZ3+gFYJnJKMVgm8YeIW58UIGXPyAWAjsCusjXHz6/tQTrXIsZYNJGDq3eSvpYCr+/CXABY86CKdP4xLJAXTYJ6xZo4Gw4jnvN+hA2B1RuTCvvCTOxUsDoJca1cK6xtf8eYORisB6+oqF9VNvU7EQNqyoVshbDCZelwvbU0WtkPtLEg7YwIailAr5a6OFy8dhbW+lQsENjbsRBwqhaHm76IkxcJ29QqFoiGXIXaWDQCh+8YtgqZX2wt93TwnrXCgUisdXBCsCtReKT4xdKG6SYBeKm5UCIWxFoEKhuGuAXSju3pGQhKqF4nkxAiFsK0MSkpCEJDRZuBZPwCMhCRULAVMNsAvFo9TmC8ckJCEJSUhCvnAmnkqBXLgiIQlNEMbmC/mrakhIQhKSUCQMKw4gYRMhdC9oEpKwkTDgvUPLDCF/QwkSkpCEJBQJvYoDSNhE+GW8EP7+QxJ2IBzyX9hngNAKSUjCIr/GC+FvyyWhrFC8oKQdIfy93FiF8Herk1BWOAKck7/euW3h/GPEyWfV6okfj3MEZMMAn3dKD7aiBC60htzIH9LNKV8yhQuRhoT4MzJe6JEQfT6NF4bGCzPjhSsSos/OdGGwMF0YGy+cM+tLdQ3dJmXWTHUN3WbALKntv/HltxCKtvpBnWFYCJcIXibaOAkrhDIbnKPL4SKEPF9HmvP6vkII3J4PY77+CTPVhXSVy3KGs1Bil3pc8W9CwCorjDmym5CdVBfTRf6NtFgyoxyoEq8fhMDNQBEluO5JeBWaRgxum2bfhMANT5EkGLFXITOopzgvzRcrCVn+7ntbdcm2vHl9WcgWwL3qNc/j6PqDsGjAoW+jDp/f+fkkZCzcYG7gjN2XVSgvQsbWfk/2NYpaZJj2qnbIrhCeMwu96ck/TCbnl0e7Pz0947quY+8nE9/PP7ysZoXNf+vWdpuwk77oAAAAAElFTkSuQmCC"
+            class="footIcons"
+            alt="Linked in Logo"
+            />
+        </a>
+        <a href="https://www.github.com/tehranimilad" target="_blank">
+            <img
+            src="data:image/png;base64,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"
+            class="footIcons"
+            alt="Linked in Logo"
+            />
+        </a> 
+    </footer>
 </body>
 </html>

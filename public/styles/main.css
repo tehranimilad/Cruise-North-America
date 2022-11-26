@@ -446,7 +446,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #343645;
+  background: #0a0a0a;
   padding: 20px;
   text-align: center;
   border-bottom: 1px solid #ffffff;
@@ -463,13 +463,13 @@ header nav a {
 header nav a:hover,
 header nav a.active {
   background: #ffffff;
-  color: #343645;
+  color: #000000;
   transition: 0.5s ease-out;
   letter-spacing: 2px;
 }
 
 body {
-  background: #343645;
+  background: #000000;
 }
 
 section {
@@ -484,7 +484,7 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  color: #343645;
+  color: #000000;
   background: #ffffff;
 }
 
@@ -493,7 +493,7 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-  color: #343645;
+  color: #000000;
   background: #ffffff;
 }
 

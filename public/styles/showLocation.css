@@ -1,7 +1,7 @@
 @media(max-width:699px){
 
 body {
-    background: #343645;
+    background: #000000;
     color:white;
 }
 
@@ -11,9 +11,8 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     padding: 5%;
-    background: linear-gradient(0deg, #343645, #343645);
+    background: linear-gradient(0deg, #000000, #000000);
     text-align: center;
-
 }
 
 .addCarBlock:before, .addCarBlock:after {
@@ -21,8 +20,8 @@ body {
     position: absolute;
     left: -2px;
     top: -2px;
-	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+    background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#4665e2, #4000ff, #0021fb, 
+        #9cb3ff, #daf1ff,#ffffff, #ffffff);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -64,10 +63,26 @@ body {
 
 }
 
+#submitRoad {
+    margin-top: 2%;
+}
+
+footer {
+    padding: 3% 0% 2% 0%;
+    text-align: center;
+}
+
+.footIcons {
+    width: 10%;
+    border-radius: 15%;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
 /* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 
 .addLocationButton {
-    width: 75px;
+    width: 85px;
     height: 30px;
     border: none;
     outline: none;
@@ -75,13 +90,14 @@ body {
     background: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
+    margin-top: 1%;
     z-index: 0;
     border-radius: 10px;
 }
 
 .addLocationButton:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    background: linear-gradient(45deg, #1e00ff, #2c25ff, #425fff, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -128,75 +144,79 @@ body {
 }
 
 .btn {
-  width: 150px;
-  height: 50px;
-  border: 1px solid #333;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
-  transition: 1s;
+    width: 150px;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
 }
 
 .btn::before, .btn::after {
-  position: absolute;
-  background: #eee;
-  z-index: -1;
-  transition: 1s;
-  content: '';
+    position: absolute;
+    background: #eee;
+    z-index: -1;
+    transition: 1s;
+    content: '';
 }
 
 .btn::before {
-  height: 50px;
-  width: 130px;
+    height: 50px;
+    width: 130px;
 }
 
 .btn::after {
-  width: 150px;
-  height: 30px;
+    width: 150px;
+    height: 30px;
 }
 
 .noselect {
-  -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
 }
 
 .btn:hover::before {
-  width: 0px;
-  background: #fff;
+    width: 0px;
+    background: #fff;
 }
 
 .btn:hover::after {
-  height: 0px;
-  background: #fff;
+    height: 0px;
+    background: #fff;
 }
 
 .btn:hover {
-  background: #fff;
+    background: #fff;
 }
 
-/* ------------------------------------------------------------ */
+/* -------------------------------------------------------------------- */
 @media(min-width:700px){
 
 body {
-    background: #343645;
-    color:white;
+    background: #000000;
+    color: white;
 }
 
 .newCarImg {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    padding-bottom: 2%;
+    max-width: 80%;
+}
+
+#createForm {
+    padding-top: 2%;
+    text-align: center;
 }
 
 .newCarDiv {
@@ -213,8 +233,8 @@ body {
     margin-top: 0%;
     width: 500px;
     padding: 1%;
+    background: linear-gradient(0deg, #000000, #000000);
     text-align: center;
-    background: linear-gradient(0deg, #343645, #343645);
 }
 
 .addCarBlock:before, .addCarBlock:after {
@@ -222,8 +242,8 @@ body {
     position: absolute;
     left: -2px;
     top: -2px;
-	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+    background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#4665e2, #4000ff, #0021fb, 
+        #9cb3ff, #daf1ff,#ffffff, #ffffff);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -247,11 +267,27 @@ body {
     filter: blur(50px);
 }
 
+#submitRoad {
+    margin-top: 2%;
+}
+
+footer {
+    padding: 2% 0% 2% 0%;
+    text-align: center;
+}
+
+.footIcons {
+    width: 4%;
+    border-radius: 15%;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
 /* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 
 .addLocationButton {
-    width: 100px;
-    height: 35px;
+    width: 94px;
+    height: 30px;
     border: none;
     outline: none;
     color: rgb(0, 0, 0);
@@ -264,7 +300,7 @@ body {
 
 .addLocationButton:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+    background: linear-gradient(45deg, #1e00ff, #2c25ff, #425fff, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -311,61 +347,64 @@ body {
 }
 
 .btn {
-  width: 150px;
-  height: 50px;
-  border: 1px solid #333;
-  font-family: 'Cinzel', serif;
-  font-size: 20px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
-  transition: 1s;
+    width: 150px;
+    height: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
 }
 
 .btn::before, .btn::after {
-  position: absolute;
-  background: #eee;
-  z-index: -1;
-  transition: 1s;
-  content: '';
+    position: absolute;
+    background: #eee;
+    z-index: -1;
+    transition: 1s;
+    content: '';
 }
 
 .btn::before {
-  height: 50px;
-  width: 130px;
+    height: 50px;
+    width: 130px;
 }
 
 .btn::after {
-  width: 150px;
-  height: 30px;
+    width: 150px;
+    height: 30px;
 }
 
 .noselect {
-  -webkit-touch-callout: none;
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
 }
 
 .btn:hover::before {
-  width: 0px;
-  background: #fff;
+    width: 0px;
+    background: #fff;
 }
 
 .btn:hover::after {
-  height: 0px;
-  background: #fff;
+    height: 0px;
+    background: #fff;
 }
 
 .btn:hover {
-  background: #fff;
+    background: #fff;
 }
+
+
+        
     
-
-
+    
+    
