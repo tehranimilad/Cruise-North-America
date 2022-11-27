@@ -50,12 +50,14 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 75%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 
 }
 
 #createForm {
+    padding-top: 2%;
     text-align: center;
+    padding-bottom: 1%;
 }
 
 .newCarDiv{
@@ -91,6 +93,7 @@ footer {
     cursor: pointer;
     position: relative;
     margin-top: 1%;
+    padding-top: 1%;
     z-index: 0;
     border-radius: 10px;
 }
@@ -214,14 +217,8 @@ body {
     max-width: 80%;
 }
 
-#createForm {
-    padding-top: 2%;
-    text-align: center;
-}
-
 .newCarDiv {
     border: 5px solid rgb(255, 255, 255);
-
 }
 
 /* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
@@ -296,6 +293,7 @@ footer {
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    margin-top: 1%;
 }
 
 .addLocationButton:before {
@@ -403,7 +401,11 @@ footer {
   background: #fff;
 }
 
-
+#createForm {
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 1%;
+}
     
 
 
