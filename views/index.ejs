@@ -18,6 +18,7 @@
             <img src="https://acegif.com/wp-content/uploads/2022/hqgif/superc-1-green-supercar.gif" alt="Super Car Driving Gif" id="titleImg">
         </div>
       </section>
+      
       <section id="cars">
         <div class="container reveal">
           <h2 class="pageTitles">Cars</h2>
@@ -70,7 +71,10 @@
                         <h4><%=location.road%></h4>
                         <img src=<%=location.img%> width="300" />
                         </a>
-                        <h5 class="locationDescriptions"><%=location.description%>
+                        <h5 class="locationDescriptions"> Creator Name: <%=location.creator%>
+                        <br />
+                        <br />
+                        <%=location.description%>
                         <br />
                         <br />
                         Difficulty: <%=location.difficulty%>
