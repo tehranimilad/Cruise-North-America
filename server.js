@@ -6,7 +6,7 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
 
-// require('dotenv').config()
+require('dotenv').config()
 const db = require('./models')
 
 
