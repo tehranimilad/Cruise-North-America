@@ -84,11 +84,10 @@ section h1 {
   margin: 20px;
 }
 
-section h2 {
-  font-size: 40px;
+/* section h3 {
+  font-size: 25px;
   text-align: center;
-  text-transform: uppercase;
-}
+} */
 
 section .text-container {
   display: flex;
@@ -499,11 +498,13 @@ section h1 {
   margin: 20px;
 }
 
-section h2 {
-  font-size: 40px;
+.quote {
+  font-size: 30px;
   text-align: center;
-  text-transform: uppercase;
+  font-style: italic;
 }
+
+
 
 section .text-container {
   display: flex;
