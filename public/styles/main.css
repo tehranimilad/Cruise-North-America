@@ -84,10 +84,12 @@ section h1 {
   margin: 20px;
 }
 
-/* section h3 {
-  font-size: 25px;
+.quote {
+  font-size: 30px;
   text-align: center;
-} */
+  font-style: italic;
+  padding-bottom: 4%;
+}
 
 section .text-container {
   display: flex;
@@ -502,6 +504,7 @@ section h1 {
   font-size: 30px;
   text-align: center;
   font-style: italic;
+  padding-bottom: 4%;
 }
 
 
