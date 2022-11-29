@@ -22,9 +22,7 @@
       <section id="cars">
         <div class="container reveal">
           <h2 class="pageTitles">Cars</h2>
-          <div>
             <a href="/car/<%= cars._id %>/new"><button class="addLocationButton">Add A Car</button></a>
-          </div>
             <div class="text-container">
               <div class="text-box">
                 <div class="mainCarBlock">
@@ -35,10 +33,11 @@
                       <img src=<%=car.img%> width="300" />
                       </a>
                       <br />
-                      <h5 class="carDescriptions"><%=car.description%>
+                      <p class="carDescriptions"><%=car.description%>
                       <br />
                       <br />
-                      Price Range: $<%= car.price %></h5>
+                      Price Range: $<%= car.price %></p>
+                    </figcaption>
                     </figure>
                 <% } %>
               </div>
@@ -56,7 +55,7 @@
           </div>
           <div class="text-container">
             <div class="text-box">
-                <img src="https://media-s3-us-east-1.ceros.com/popsugar/images/2022/06/29/080e9784196eab0ea228e14dce9076ab/rearviewmirror-mobile.gif?imageOpt=1" alt="Scenic Route Gif" class="roadSectionImg">
+                <img src="https://media-s3-us-east-1.ceros.com/popsugar/images/2022/06/29/080e9784196eab0ea228e14dce9076ab/rearviewmirror-mobile.gif?imageOpt=1" alt="Scenic Route Gif" id="roadSectionImg">
             </div>
           </div>
         </div>
@@ -75,7 +74,7 @@
                         <h4><%=location.road%></h4>
                         <img src=<%=location.img%> width="300" />
                         </a>
-                        <h5 class="locationDescriptions"> Creator Name: <%=location.creator%>
+                        <h5 class="locationDescriptions"> Author: <%=location.creator%>
                         <br />
                         <br />
                         <%=location.description%>

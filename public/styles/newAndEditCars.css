@@ -21,7 +21,7 @@ body {
     left: -2px;
     top: -2px;
 	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+	#ff9c9c, #ffdada,#ffffff, #ffffff);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -244,7 +244,7 @@ body {
     left: -2px;
     top: -2px;
 	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+	#ff9c9c, #ffdada,#ffffff, #ffffff);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);

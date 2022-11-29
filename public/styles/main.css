@@ -22,8 +22,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #343645;
-  padding: 20px;
+  background: #000000;
+  padding: 18px;
   text-align: center;
   border-bottom: 1px solid #ffffff;
 }
@@ -33,19 +33,21 @@ header nav a {
   font-size: 2rem;
   color: #ffffff;
   border-radius: 3px;
-  letter-spacing: 0.5px; 
+  letter-spacing: 0.2px; 
 }
 
 header nav a:hover,
 header nav a.active {
   background: #ffffff;
-  color: #343645;
+  color: #000000;
   transition: 0.5s ease-out;
   letter-spacing: 7px;
 }
+
 body {
-  background: #343645;
+  background: #000000;
 }
+
 section {
   min-height: 100vh;
   display: flex;
@@ -58,7 +60,7 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  color: #343645;
+  color: #000000;
   background: #ffffff;
 }
 
@@ -67,7 +69,7 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-  color: #343645;
+  color: #000000;
   background: #ffffff;
 }
 
@@ -85,7 +87,7 @@ section h1 {
 }
 
 .quote {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   font-style: italic;
   padding-bottom: 4%;
@@ -96,13 +98,13 @@ section .text-container {
 }
 
 section .text-container .text-box {
-  margin: 25px;
+  margin: 22px;
   padding: 20px;
   background: #fdfdfd;
 }
 
 section .text-container .text-box h3 {
-  font-size: 10px;
+  font-size: 10px; 
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -115,11 +117,28 @@ section .text-container .text-box h3 {
   color:black;
 } 
 
+.car-Card p {
+  padding-top:2%;
+  text-align: left;
+  width: auto;
+  font-size: 12px;
+}
+
+.location-card h5 {
+  position: relative;
+  padding-top: 3%;
+  font-size: 12px;
+  text-align: left;
+  font-weight: lighter;
+}
+
 .location-card h4 {
   padding-bottom: 4%;
+  margin: 0 auto;
   text-align: center;
   text-decoration: none;
   color:black;
+
 } 
 
 .reveal {
@@ -146,9 +165,8 @@ section .text-container .text-box h3 {
   color:black;
   width: 100%;
   justify-content: space-between;
-  border: 5px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   text-align: justify;
-  width: 100%;
 }
 
 .location-card img {
@@ -162,14 +180,14 @@ section .text-container .text-box h3 {
   color:black;
   width: 100%;
   justify-content: space-between;
-  border: 5px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   text-align: justify;
   width: 100%;
 } 
 
 .car-Card img {
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .newLocationImage {
@@ -186,7 +204,7 @@ a.button {
     padding: 08px 16px;
     text-align: center;
     font-size: 14px;
-    border: 5px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 12px 12px 12px rgb(0, 0, 0);
     border-radius: 11px;
 } 
@@ -218,7 +236,7 @@ button {
   left:-2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(2px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
@@ -259,37 +277,37 @@ button {
 }
 
 .btn {
-width: 150px;
-height: 50px;
-border: 1px solid #333;
-font-family: 'Cinzel', serif;
-font-size: 20px;
-cursor: pointer;
--webkit-tap-highlight-color: transparent;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-z-index: 0;
-transition: 1s;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #333;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
 }
 
 .btn::before, .btn::after {
-position: absolute;
-background: #eee;
-z-index: -1;
-transition: 1s;
-content: '';
+  position: absolute;
+  background: #eee;
+  z-index: -1;
+  transition: 1s;
+  content: '';
 }
 
 .btn::before {
-height: 50px;
-width: 130px;
+  height: 50px;
+  width: 130px;
 }
 
 .btn::after {
-width: 150px;
-height: 30px;
+  width: 150px;
+  height: 30px;
 }
 
 .noselect {
@@ -302,17 +320,17 @@ height: 30px;
 }
 
 .btn:hover::before {
-width: 0px;
-background: #fff;
+  width: 0px;
+  background: #fff;
 }
 
 .btn:hover::after {
-height: 0px;
-background: #fff;
+  height: 0px;
+  background: #fff;
 }
 
 .btn:hover {
-background: #fff;
+  background: #fff;
 }
 
 footer {
@@ -322,10 +340,10 @@ footer {
 }
 
 .footIcons {
-    width: 15%;
-    border-radius: 15%;
-    border: 4px solid rgb(0, 0, 0);
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  max-width: 50px;
+  border-radius: 15%;
+  border: 4px solid rgb(0, 0, 0);
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 .cars-list-text {
@@ -338,35 +356,36 @@ footer {
 }
 
 #roadPageTitle {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
 
 #titleImg {
-    object-fit: cover;  
-    width: 100%;
-    align-items: center;
+  object-fit: cover;  
+  min-width: 225px;
+  max-width: 325px;
+  align-items: center;
 }
 
 .pageTitles {
   padding-bottom: 1%;
   color :white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
+#roadSectionImg{
+  display: block;
+  margin: 0 auto;
+  max-width: 325px;
+} 
 
 .carSectionImg{
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 40%;
-}
-
-h5 {
-  font-size: 10px;
-}
-
-.carDescriptions {
-  margin: 0 auto;
 }
 
 .locationDescriptions {
@@ -387,7 +406,7 @@ h5 {
 	left: -2px;
 	top: -2px;
 	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #fb0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+	#ff9c9c, #ffdada,#ffffff, #ffffff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -415,6 +434,7 @@ h5 {
 
 @media(min-width:800px){
   @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -422,6 +442,7 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
 }
@@ -446,8 +467,8 @@ header nav a {
   padding: 10px 20px;
   font-size: 2rem;
   color: #ffffff;
-  border-radius: 5px;
-  letter-spacing: 0.5px;
+  border-radius: 2px;
+  letter-spacing: 0.2px;
 }
 
 header nav a:hover,
@@ -504,7 +525,7 @@ section h1 {
   font-size: 30px;
   text-align: center;
   font-style: italic;
-  padding-bottom: 4%;
+  padding-bottom: 1%;
 }
 
 section .text-container {
@@ -518,7 +539,7 @@ section .text-container .text-box {
 }
 
 section .text-container .text-box h3 {
-  font-size: 35px;
+  font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -560,10 +581,6 @@ section .text-container .text-box h3 {
   border: 2px ridge rgb(0, 0, 0);
 } 
   
-.car-Card img {
-   padding-right: 10%;
-   max-width: 100%;
-} 
   
 .car-Card h4 {
   padding-bottom: 3%;
@@ -572,10 +589,10 @@ section .text-container .text-box h3 {
   text-decoration: none;
   color:black;
 }
-} 
+
 
 .newLocationImage {
-    max-width: 600px;
+  max-width: 600px;
 }
   
 a.button {
@@ -588,7 +605,7 @@ a.button {
   padding: 08px 16px;
   text-align: center;
   font-size: 14px;
-  border: 5px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   box-shadow: 12px 12px 12px rgb(0, 0, 0);
   border-radius: 11px;
 } 
@@ -600,25 +617,25 @@ footer {
 }
   
 .footIcons {
-    width: 5%;
-    border-radius: 15%;
-    border: 4px solid rgb(0, 0, 0);
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  width: 5%;
+  border-radius: 15%;
+  border: 4px solid rgb(0, 0, 0);
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
   
 #carPageTitle {
-    color: white;
-    text-align: center
+  color: white;
+  text-align: center
 }
 
 #roadPageTitle {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
   
 #titleImg {
   object-fit: cover;  
-  width: 100%;
+  min-width: 600px;
   align-items: center;
   margin:0 auto;
 }
@@ -637,63 +654,63 @@ button {
 }
 /* implemented css button animation from https://dev.to/webdeasy/top-20-css-buttons-animations-f41 */
 .addLocationButton {
-    width: 100px;
-    height: 35px;
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 100px;
+  height: 32px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .addLocationButton:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #ff9500, #f4ffef, #ffffff, #dbe1ff, #717171, #555555, #010101);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(2px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
 
 .addLocationButton:active {
-    color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255)
 }
 
 .addLocationButton:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .addLocationButton:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .addLocationButton:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 
@@ -755,29 +772,28 @@ button {
 }
 
 .location-card h4 {
-    padding-bottom: 4%;
-    text-align: center;
-    width: 90%;
-    text-decoration: none;
-    color:black;
+  padding-bottom: 4%;
+  text-align: center;
+  width: 90%;
+  text-decoration: none;
+  color:black;
 }
 
-.car-Card h5 {
-  padding-top: 4%;
-  text-align: center;
-  width: 50%;
-  padding-bottom: 1%;
-  font-size: 14px;
+.car-Card p {
+  padding-top:2%;
+  text-align: left;
+  width: auto;
+  font-size: 12px;
 }
 
 .location-card h5 {
-    padding-top: 4%;
-    text-align: center;
-    width: 50%;
-    padding-bottom: 1%;
-    font-size: 14px;
+  position: relative;
+  padding-top: 3%;
+  font-size: 14px;
+  text-align: left;
+  font-weight: lighter;
 }
-  
+
 .carSectionImg{
   display: block;
   margin-left: auto;
@@ -785,20 +801,13 @@ button {
   max-width: 40%;
 }
   
-.roadSectionImg{
+#roadSectionImg{
   display: block;
+  min-width: 475px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 55%;
+
 } 
-
-.carDescriptions {
-  margin: 0 auto;
-}
-
-.locationDescriptions {
-  margin: 0 auto;
-}
 
 .car-Card {
   text-align: justify;
@@ -808,6 +817,7 @@ button {
 .car-Card img {
   display: block;
   margin: 0 auto;
+  padding-right: 10%;
 }
 
 /* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
@@ -824,7 +834,7 @@ button {
 	left: -2px;
 	top: -2px;
 	background: linear-gradient(45deg, #000000, #3c3c3c, #6c6c6c,#e26246, #ff0000, #ff0000, 
-		#ff9c9c, #ffdada,#ffffff, #ffffff);
+	#ff9c9c, #ffdada,#ffffff, #ffffff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -847,5 +857,4 @@ button {
 .mainCarBlock:after {
 	filter: blur(50px);
 }
-
-  
+}
