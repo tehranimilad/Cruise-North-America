@@ -1,6 +1,6 @@
 # Cruise-North-America
 An embedded screenshot of the app:
-![desktopView](Screenshots/Desktop.png)
+![desktopView](Screenshots/Desktop.jpg)
 
 Technologies Used: HTML, CSS, JavaScript, EJS, Express, mongoDB, Mongo Atlas, Railway.
 
