@@ -109,17 +109,24 @@
           </a> 
       </footer>
       <script>
-        // Implented CSS Reavel Function from https://alvarotrigo.com/blog/css-animations-scroll/
+        // Implented CSS Header/ Reveal Function from https://alvarotrigo.com/blog/css-animations-scroll/
+        // Grabs all the sections created
         let section = document.querySelectorAll("section");
+        // Grabs all the header nav menu options
         let menu = document.querySelectorAll("header nav a");
 
         window.onscroll = () => {
           section.forEach((i) => {
+            // property of the Window interface returns the number of pixels that the document is currently scrolled vertically.
             let top = window.scrollY;
-            let offset = i.offsetTop - 150;
+            // distance of the outer border of the current element relative to the inner border
+            let offset = i.offsetTop - 140;
+            // measurement in pixels of the element's CSS height,
             let height = i.offsetHeight;
+            // grabs the id's of the NAV bar for the various pages
             let id = i.getAttribute("id");
 
+            // if the top of the page is greater than or equal to the offset, AND the top is less than the offet and height, then change the NAV ID selected and move onto the next one
             if (top >= offset && top < offset + height) {
               menu.forEach((link) => {
                 link.classList.remove("active");
@@ -130,15 +137,21 @@
             }
           });
         };
-
+        
+        // Function that reveals the pages based on the the positioning of the window
         function reveal() {
+          // grabs all the sections with the class of reveal
           var reveals = document.querySelectorAll(".reveal");
 
+          // Iterates through all of the sections to determine the window height, 
           for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
-            var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
 
+            // returns a DOMRect object providing information about the size of an element and its position relative to the viewport.
+            // A DOMRect describes the size and position of a rectangle.
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 140;
+            // If the position and size of the page is less than the window height - the visible elements, reavel the active page, else remove the active page.
             if (elementTop < windowHeight - elementVisible) {
               reveals[i].classList.add("active");
             } else {
@@ -146,7 +159,7 @@
             }
           }
         }
-
+        // Listens for the sroll and reveals the content based on the user's scroll
         window.addEventListener("scroll", reveal);
 
         // Checks for scroll position when page loads

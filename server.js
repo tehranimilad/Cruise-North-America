@@ -1,6 +1,5 @@
-// +-+-+-+-+-+-+-+-+-+-+-+-+
-// |D|E|P|E|N|D|E|N|C|I|E|S|
-// +-+-+-+-+-+-+-+-+-+-+-+-+
+
+// Dependencies
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
@@ -13,9 +12,7 @@ const carsCtrl = require('./controllers/cars')
 const locationsCtrl = require('./controllers/locations');
 const port  = process.env.PORT
 
-// +-+-+-+-+-+-+-+-+-+-+
-// |M|I|D|D|L|E|W|A|R|E|
-// +-+-+-+-+-+-+-+-+-+-+
+// Middleware
 // set folder for static files
 app.use(express.static('public'))
 // sets the view engine to EJS for our app (this allows us to render EJS files without usind `.ejs` after file names)
@@ -29,9 +26,7 @@ app.use((req, res, next) => {
 });
 
 
-// +-+-+-+-+-+-+
-// |R|O|U|T|E|S|
-// +-+-+-+-+-+-+
+//Routes
 // Index Route (GET/Read): We'll leave this route in the server.js since it affects both models
 app.get('/', (req, res) => {
     db.Locations.find({}, (err, locations) => {
@@ -49,9 +44,7 @@ app.get('/', (req, res) => {
 app.use('/car', carsCtrl)
 app.use('/location', locationsCtrl)
 
-// +-+-+-+-+-+-+-+-+
-// |L|I|S|T|E|N|E|R|
-// +-+-+-+-+-+-+-+-+
+// Listener
 // `app.listen()` binds and listens for the connections on the specified host and port
 app.listen(port, () => {
 })
