@@ -1,4 +1,3 @@
-
 // +-+-+-+-+-+-+-+-+-+-+-+-+
 // |D|E|P|E|N|D|E|N|C|I|E|S|
 // +-+-+-+-+-+-+-+-+-+-+-+-+
@@ -6,7 +5,7 @@ const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
 
-require('dotenv').config()
+// require('dotenv').config()
 const db = require('./models')
 
 
@@ -55,7 +54,6 @@ app.use('/location', locationsCtrl)
 // +-+-+-+-+-+-+-+-+
 // `app.listen()` binds and listens for the connections on the specified host and port
 app.listen(port, () => {
-    console.log(`App is running at localhost:${port}`)
 })
 
 

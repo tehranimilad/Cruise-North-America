@@ -29,7 +29,6 @@ router.post('/', (req, res) => {
 router.delete('/:id', (req, res) => {
 
     db.Locations.findByIdAndRemove(req.params.id, (err, locations) => {
-        // res.send(location)
         res.redirect('/')
     })
 })
@@ -51,6 +50,5 @@ router.get('/:id/edit', (req, res) => {
         })
     })
 })
-
 
 module.exports = router
