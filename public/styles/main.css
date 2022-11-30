@@ -589,7 +589,7 @@ section .text-container .text-box h3 {
   display: block;
   margin: 0 auto;
   padding-right: 25px;
-  min-width: 400px;
+  min-width: 425px;
 }
   
 .car-Card {
@@ -839,7 +839,7 @@ button {
   display: block;
   margin: 0 auto;
   padding-right: 20px;
-  min-width: 400px;
+  min-width: 425px;
 }
 
 /* implemented css border animation from https://codepen.io/Huhtamaki/pen/GPzwPY */
