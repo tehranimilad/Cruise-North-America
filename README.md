@@ -1,7 +1,5 @@
 # Cruise-North-America
 
-![desktopView](Screenshots/Desktop.jpg)
-
 Technologies Used: HTML, CSS, JavaScript, EJS, Express, mongoDB, Mongo Atlas, Railway.
 
 Approach Taken: After setting up the file structure, I focused on building the website with a mobile first approach. Once the website was optimized for mobile devices, I then focused on optimizing the website for larger resolutions. 
