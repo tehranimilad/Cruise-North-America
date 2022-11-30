@@ -1,7 +1,7 @@
 # Cruise-North-America
 
-![desktopView](Screenshots/Desktop1.png)
-![desktopView](Screenshots/Desktop2.png)
+![desktopView](screenshots/Desktop1.png)
+![desktopView](screenshots/Desktop2.png)
 
 Technologies Used: HTML, CSS, JavaScript, EJS, Express, mongoDB, Mongo Atlas, Railway.
 
